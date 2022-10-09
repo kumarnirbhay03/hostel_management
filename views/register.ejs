@@ -1,0 +1,52 @@
+<% layout('layouts/boilerplate')%>
+<p>
+   <h1>WELCOME</h1> 
+</p>
+<h2>Register Admin</h2>
+<form action="/register" method="POST" class="validated-form" novalidate>
+    <div class="mb-3">
+        <label class="form-label" for="username">Hostel Name</label>
+        <input class="form-control" type="text" id="username" name="username" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="email">Email</label>
+        <input class="form-control" type="email" id="email" name="email" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="password">Password</label>
+        <input class="form-control" type="password" id="password" name="password" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="password">confirm Password</label>
+        <input class="form-control" type="password" id="password" name="password" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>
+  
+     <div class="mb-3">
+                <label class="form-label" for="rooms">No of Rooms</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="rooms" placeholder="0" aria-label="rooms"
+                        aria-describedby="rooms-label" name="hostel[rooms]" required>
+                 <div class="valid-feedback">
+                    looks good!!!
+                  </div>
+                </div>
+            </div>
+
+    <div>
+        <a href="/login">Already have an account?</a>
+      <button class="btn btn-success" class="ml-auto">Register</button>
+    </div>
+    
+</form>
